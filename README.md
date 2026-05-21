@@ -15,8 +15,12 @@ Using Vite to create a new React Application
 Application-modification
 
   - The entry point is <code>main.jsx</code>.
+    - <code>BrowserRouter basename="/application-context"</code>
   - Add react router logic in <code>App.jsp</code>.
   - Vite configuration (port, etc) <code>vite.config.js</code>
+    - <code>open</code> (DEV-mode only): auto-open browser tab to this location.
+    - <code>proxy</code> (DEV-mode only): maps to RESTful APIs
+    - <code>base</code> specifies the application's context. This needs to match the basename used by the ReactRouter.
   - Build application structure from there...
 
 # React + Vite
